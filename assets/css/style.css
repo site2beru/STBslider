@@ -53,15 +53,17 @@ nav.navbar a {
     padding: 0px 20px;
 }
 
+
+/* Slider styles starts here */
 .sliderWrap {
     position: relative;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
     width: 100%;
 }
 
 .stbslider {
-    height: 800px;
+    height: 500px;
     max-height: 800px;
     overflow: hidden;
     position: absolute;
@@ -90,7 +92,7 @@ nav.navbar a {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 600px;
+    height: 500px;
     overflow: hidden;
     width: 100vw;
     transition: transform .5s ease-in-out;
@@ -127,13 +129,29 @@ nav.navbar a {
     object-fit: cover;
     position: relative;
     width: 100%;
+    transition: scale 3s ease-in-out;
+    -webkit-transition: scale 3s ease-in-out;
+    -moz-transition: scale 3s ease-in-out;
+    -ms-transition: scale 3s ease-in-out;
+    -o-transition: scale 3s ease-in-out;
+}
+
+.slide img:hover {
+    scale: 1.1;
 }
 
 .slide__text {
     color: #fff;
     font-size: 2em;
     position: absolute;
+    width: 80%;
     z-index: 9;
+}
+
+.slide__text p {
+    background-color: #9F6D6F;
+    display: inline-block;
+    padding: 0 3px;
 }
 
 .stbslider__control {
@@ -177,15 +195,17 @@ span#prev {
     position: absolute;
     z-index: 9;
     right: 5%;
-    bottom: 50%;
+    bottom: 25%;
 }
 
 span#next {
     position: absolute;
     z-index: 9;
     left: 5%;
-    bottom: 50%;
+    bottom: 25%;
 }
+
+/* Slider styles ends here */
 
 .context {
     align-items: center;
@@ -202,6 +222,7 @@ h2.context__slogan {
 
 footer {
     border-top: 1px solid #fff;
+    color: #fff;
     height: 80px;
     margin-top: 20px;
     padding: 0px 20px;

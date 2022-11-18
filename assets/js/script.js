@@ -12,7 +12,7 @@ const sliderMove = () => {
 
     prev.addEventListener('click', function() {
 
-        if (slideNum < slide.length -1) {
+      if (slideNum < slide.length -1) {
           slideNum++
         } 
        else { 
