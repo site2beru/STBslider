@@ -68,8 +68,8 @@ nav.navbar a {
     overflow: hidden;
     position: absolute;
     left: 0;
-    /*width: 100%;
-    */transition: left .5s ease-in-out;
+    /* width: 100%; */
+   transition: left .5s ease-in-out;
     -webkit-transition: left .5s ease-in-out;
     -moz-transition: left .5s ease-in-out;
     -ms-transition: left .5s ease-in-out;
@@ -95,15 +95,15 @@ nav.navbar a {
     height: 500px;
     overflow: hidden;
     width: 100vw;
-    transition: transform .5s ease-in-out;
-    -webkit-transition: transform .5s ease-in-out;
-    -moz-transition: transform .5s ease-in-out;
-    -ms-transition: transform .5s ease-in-out;
-    -o-transition: transform .5s ease-in-out;
+    transition: width .5s ease-in-out;
+    -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -ms-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
 }
 
 /* .slide:hover {
-    width: 100%;
+    width: 400%;
 } */
 
 .slide.active {
