@@ -10,17 +10,6 @@ const sliderMove = () => {
          slide = document.querySelectorAll('.slide'),
          slideNum = 0;
 
-    prev.addEventListener('click', function() {
-
-      if (slideNum < slide.length -1) {
-          slideNum++
-        } 
-       else { 
-        slideNum = 0;
-    }
-        slideWrap.style.left = -slideNum * view + "px";
-    });
-    
     next.addEventListener('click', function() {
 
       if (slideNum > 0) {
@@ -31,6 +20,27 @@ const sliderMove = () => {
   }
       slideWrap.style.left = -slideNum * view + "px";
   });
-    
+
+    prev.addEventListener('click', function (list) {
+
+      if (slideNum < slide.length - 1) {
+        slideNum++;
+      }
+      else {
+        slideNum = 0;
+      }
+      slideWrap.style.left = -slideNum * view + "px";
+    });
+   
+    const intervalId = setInterval(() => {
+      if (slideNum < slide.length - 1) {
+        slideNum++;
+      }
+      else {
+        slideNum = 0;
+      }
+      slideWrap.style.left = -slideNum * view + "px";
+    }, 4000);
+
 }
 sliderMove();
